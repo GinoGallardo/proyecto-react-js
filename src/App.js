@@ -1,15 +1,14 @@
 import Container from "./Layout/Container";
-import Productos from './Paginas/Productos'
-import Carrito from "./component/carrito/Carrito.jsx";
+import Carrito from './component/carrito/Carrito'
+
 
 function App() {
 
   return (
     <div className="App">
       <Container>
-        <Productos/>
+        <Carrito/>
       </Container>
-      <Carrito/>
     </div>
   );
 }

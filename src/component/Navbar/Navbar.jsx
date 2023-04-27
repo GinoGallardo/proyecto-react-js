@@ -9,7 +9,7 @@ export const Navbar = (props) => {
       <nav className="col-12 navbar navbar-expand-lg bg-transparent">
         <div className="container container-lg d-flex">
           <div>
-            <h1>Susana Prado</h1>
+            <h1>Ropa Interior</h1>
           </div>
           <div>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
