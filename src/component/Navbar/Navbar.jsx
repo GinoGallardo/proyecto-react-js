@@ -2,9 +2,12 @@ import React from 'react'
 import { NavbarLi } from './NavbarLi'
 
 export const Navbar = (props) => {
+
+  const items = ['Inicio','Productos','Contacto']
+
   return (
-      <nav className="navbar navbar-expand-lg bg-transparent">
-        <div className="container-fluid d-block d-lg-flex">
+      <nav className="col-12 navbar navbar-expand-lg bg-transparent">
+        <div className="container container-lg d-flex">
           <div>
             <h1>Susana Prado</h1>
           </div>
@@ -14,16 +17,18 @@ export const Navbar = (props) => {
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav">
-                <NavbarLi navbarLi={"Home"}/>
-                <NavbarLi navbarLi={"Productos"}/>
-                <NavbarLi navbarLi={"Contacto"}/>
+              {props.items?.map((texto,index) => (
+                <NavbarLi key={index} texto={texto} />
+                ))}
               </ul>
             </div>
           </div>
-          <div>
-            <a href='../carrito/carrito.jsx'><i className="bi bi-bag m-5 fs-4"></i></a>
-          </div>
+        </div>
+        <div className='m-4'>
+          <a href='#'><i className="bi bi-bag m-4 fs-4"></i></a>
+          
         </div>
       </nav>
   )
 }
+export default Navbar;

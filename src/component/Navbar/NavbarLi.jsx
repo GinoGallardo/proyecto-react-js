@@ -1,9 +1,13 @@
-import React from 'react'
+import {Fragment} from 'react'
 
 export const NavbarLi = (props) => {
   return (
-    <li className='nav-link'>
-      <a href="#">{props.navbarLi}</a>
-    </li>
+
+      <li className="nav-item">
+        <a className="nav-link" aria-current="page" href='#'>
+          {props.texto}
+        </a>
+      </li>
+  
   )
 }
