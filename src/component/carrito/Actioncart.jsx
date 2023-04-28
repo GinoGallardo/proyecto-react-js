@@ -4,3 +4,6 @@ export const TYPE = {
   Remove_All_From_Cart: 'Remove_All_From_Cart',
   Reset_Cart: 'Reset_Cart',
 }
+
+
+export default TYPE;

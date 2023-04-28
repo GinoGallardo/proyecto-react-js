@@ -27,3 +27,5 @@ export function Reducecart(state,action){
   }
     
 }
+
+export default Reducecart;
