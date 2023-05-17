@@ -1,0 +1,13 @@
+.position{
+  top: 0;
+}
+
+.navbar{
+  padding: 0 !important;
+}
+
+.navbarLogo{
+  width: 08rem;
+  margin: 0;
+  padding: 0;
+}

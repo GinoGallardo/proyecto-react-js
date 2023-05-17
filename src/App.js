@@ -1,16 +1,12 @@
-import Container from "./Layout/Container";
-import Carrito from './component/carrito/Carrito'
+import React, { Fragment } from 'react'
+import Ruta from './router/Ruta'
 
-
-function App() {
-
+const App = () => {
   return (
-    <div className="App">
-      <Container>
-        <Carrito/>
-      </Container>
-    </div>
-  );
+    <Fragment>
+      <Ruta/>
+    </Fragment>
+  )
 }
 
-export default App;
+export default App
