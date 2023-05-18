@@ -1,10 +1,10 @@
 import React from 'react'
-import Item from './Item'
+import CardItem from '../component/card/CardItem'
 
 export const ItemList = ({data =[]}) => {
 
   return (
-    data.map(products => <Item key={products.id} info={products}/>)
+    data.map(products => <CardItem key={products.id} info={products}/>)
   )
 }
 

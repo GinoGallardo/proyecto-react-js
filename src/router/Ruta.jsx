@@ -5,6 +5,7 @@ import Product from '../pages/Product'
 import Navbar from '../component/Navbar/Navbar'
 import NavbarAlert from '../component/Navbar/NavbarAlert'
 import Contacto from '../pages/Contacto'
+import Detail from '../component/ItemDetail/Detail'
 
 const Ruta = () => {
   
@@ -16,6 +17,7 @@ const Ruta = () => {
         <Route path='/' element={<Home/>} />
         <Route path='/Product' element={<Product/>} />
         <Route path='/Contacto' element={<Contacto/>} />
+        <Route path='/Detail/:id' element={<Detail/>} />
       </Routes>
     </BrowserRouter>
   )

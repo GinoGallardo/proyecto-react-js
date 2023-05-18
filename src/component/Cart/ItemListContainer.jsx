@@ -1,7 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react'
 import ItemCount from './ItemCount'
-import Title from './Title'
-import ItemList from './ItemList'
+import CardItem from '../card/CardItem'
 import img1 from '../../img/img1.jpeg'
 import img2 from '../../img/img2.jpeg'
 import img3 from '../../img/img3.jpeg'
@@ -18,7 +17,7 @@ const products = [
   {id: 6, name: 'Producto 6', image: img6, descripcion:'Descripcion', price: 600},
 ]
 
-export const ItemListContainer = ({ texto }) => {
+export const ItemListContainer = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -34,9 +33,14 @@ export const ItemListContainer = ({ texto }) => {
 
   return (
     <Fragment>
-      <Title greeting={texto}/>
       <ItemCount initial={1} stock={5} onAdd={onAdd}/>
-      <ItemList data={data}/>
+      <div>
+        {products.map((producto) =>(
+          <CardItem data={data}/>
+        ))
+
+        }
+      </div>
     </Fragment>
     
   )
