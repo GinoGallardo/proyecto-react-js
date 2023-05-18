@@ -1,12 +1,11 @@
 import React, { Fragment, useState, useEffect } from 'react'
-import ItemCount from './ItemCount'
-import CardItem from '../card/CardItem'
 import img1 from '../../img/img1.jpeg'
 import img2 from '../../img/img2.jpeg'
 import img3 from '../../img/img3.jpeg'
 import img4 from '../../img/img4.jpeg'
 import img5 from '../../img/img5.jpeg'
 import img6 from '../../img/img6.jpeg'
+import ItemList from './ItemList'
 
 const products = [
   {id: 1, name: 'Producto 1', image: img1, descripcion:'Descripcion', price: 100},
@@ -29,18 +28,9 @@ export const ItemListContainer = () => {
     getData.then(res => setData(res));
   },[])
 
-  const onAdd = (quantity) => {}
-
   return (
     <Fragment>
-      <ItemCount initial={1} stock={5} onAdd={onAdd}/>
-      <div>
-        {products.map((producto) =>(
-          <CardItem data={data}/>
-        ))
-
-        }
-      </div>
+      <ItemList data={data}/>
     </Fragment>
     
   )

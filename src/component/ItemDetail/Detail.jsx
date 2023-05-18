@@ -6,10 +6,10 @@ import img3 from '../../img/img3.jpeg'
 import img4 from '../../img/img4.jpeg'
 import img5 from '../../img/img5.jpeg'
 import img6 from '../../img/img6.jpeg'
+import ItemCount from './ItemCount'
 
 export const Detail = () => {
 
-  const navigate = useNavigate()
   const { id } = useParams()
 
   const [product, setProduct] = useState({});
@@ -27,33 +27,49 @@ export const Detail = () => {
   useEffect(() => {
     setTimeout(() => {
       const filter = products.find((product) => product.id === id);
-    setProduct(filter)
-    setLoading(false)
+      setProduct(filter)
+      setLoading(false)
     }, 2000);
-    
+
   }, []);
 
-  const agrgarAlCarrito = () => {
+  const agregarAlCarrito = () => {
     navigate('/Productos')
   }
+  const navigate = useNavigate()
+  const onAdd = (quantity) => { }
 
   return (
     <Fragment>
-      <button className='btn btn-outline-info' onClick={() => navigate(-1)}>Volver</button>
-      <hr />
-      {loading && <h2>Cargando...</h2>}
-      {product && !loading && (
-        <div>
-        <img src={product.image} alt="" />
-        <h3>{product.name}</h3>
-        <p>{product.descripcion}</p>
-        <span>{product.price}</span>
-
-        <h4>ACA VA MI CONTER</h4>
-        <button className='btn btn-outline-info' onClick={agrgarAlCarrito}>Agregar al Carrito</button>
-      </div>  
-      )}
-      </Fragment>
+      <div className="container">
+        <div className="row">
+          {loading && <h2 className='text-center'>Cargando...</h2>}
+          {product && !loading && (
+            <div className='container-fluit d-flex mt-5'>
+              <div className="conatiner-fluit w-25 ">
+                <img className='w-100' src={product.image} alt="" />
+              </div>
+              <div className="row">
+                <div className="container">
+                  <div className="row">
+                    <h3>{product.name}</h3>
+                    <span>{product.price}</span>
+                    <p>{product.descripcion}</p>
+                  </div>
+                </div>
+                <div className='container'>
+                  <ItemCount initial={1} stock={5}/>
+                </div>
+                <div className='class="d-grid gap-2"'>
+                  <button className="btn btn-outline-success" onClick={agregarAlCarrito}>Agregar al Carrito</button>
+                  <button className="btn btn-outline-warning" onClick={()=>navigate('../../pages/Product')}>Volver</button>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    </Fragment>
   );
 };
 

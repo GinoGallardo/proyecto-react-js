@@ -1,4 +1,5 @@
-import React from 'react'
+import './pages.css'
+import React, { Fragment } from 'react'
 import ItemDetailContainer from '../component/ItemDetail/ItemDetailContainer'
 import img1 from '../img/img1.jpeg'
 import img2 from '../img/img2.jpeg'
@@ -20,13 +21,14 @@ export const ItemDetail = () => {
   ]
 
   return (
+    <Fragment>
       <div className="d-flex">
         {products.map((product) => (
           <ItemDetailContainer key={product.id} {...product} />
         ))
         }
       </div>
-
+    </Fragment>
   )
 }
 

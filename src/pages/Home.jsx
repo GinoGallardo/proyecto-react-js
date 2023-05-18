@@ -1,7 +1,4 @@
 import '../pages/pages.css'
-import React, { Fragment } from 'react'
-import { Image } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
 import iconoweb from '../img/iconoweb.png'
 
 export const Home = () => {

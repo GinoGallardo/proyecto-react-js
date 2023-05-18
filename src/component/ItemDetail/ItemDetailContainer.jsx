@@ -5,6 +5,7 @@ export const ItemDetailContainer = (props) => {
     const {id, image, name, price, descripcion } = props;
     const navigate = useNavigate()
 
+
     return (
       <div className='card text-center bg-dark animate__animated animate__fadeInUp'>
         <div className="overflow">
@@ -13,7 +14,6 @@ export const ItemDetailContainer = (props) => {
             <h5 className="card-title">{name}</h5>
             <span className="card-title">${price}</span>
             <p className="card-text text-secondary">{descripcion}</p>
-            <button type='button' className="btn text-white btn-btn-outline-light rounded-0 m-1">Agregar al Carrito</button>
             <button onClick={()=>navigate(`/src/component/ItemDetail/Detail/${id}`)} className="btn text-white btn-btn-outline-light rounded-0 m-1">Vista</button>
           </div>
         </div>

@@ -3,7 +3,7 @@ import React, { Fragment } from 'react'
 import { NavbarLi } from './NavbarLi'
 // import { NavLink } from 'react-bootstrap'
 import navbarlogo from '../../img/navbarlogo.png'
-import CartWidget from '../Cart/CartWidget'
+import CartWidget from './CartWidget'
 
 export const Navbar = (props) => {
 
