@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
-export const ItemDetailContainer = (props) => {
+export const CartWidgetDetail = (props) => {
     const {id, image, name, price, descripcion } = props;
     const navigate = useNavigate()
 
@@ -21,4 +21,4 @@ export const ItemDetailContainer = (props) => {
   )
 }
 
-export default ItemDetailContainer
+export default CartWidgetDetail

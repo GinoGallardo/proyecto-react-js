@@ -37,7 +37,6 @@ export const Detail = () => {
     navigate('/Productos')
   }
   const navigate = useNavigate()
-  const onAdd = (quantity) => { }
 
   return (
     <Fragment>
@@ -45,12 +44,12 @@ export const Detail = () => {
         <div className="row">
           {loading && <h2 className='text-center'>Cargando...</h2>}
           {product && !loading && (
-            <div className='container-fluit d-flex mt-5'>
+            <div className='container d-flex mt-5'>
               <div className="conatiner-fluit w-25 ">
                 <img className='w-100' src={product.image} alt="" />
               </div>
               <div className="row">
-                <div className="container">
+                <div className="container ms-5">
                   <div className="row">
                     <h3>{product.name}</h3>
                     <span>{product.price}</span>
@@ -61,8 +60,8 @@ export const Detail = () => {
                   <ItemCount initial={1} stock={5}/>
                 </div>
                 <div className='class="d-grid gap-2"'>
-                  <button className="btn btn-outline-success" onClick={agregarAlCarrito}>Agregar al Carrito</button>
-                  <button className="btn btn-outline-warning" onClick={()=>navigate('../../pages/Product')}>Volver</button>
+                  <button className="btn btn-outline-success ms-3" onClick={agregarAlCarrito}>Agregar al Carrito</button>
+                  <button className="btn btn-outline-warning ms-3" onClick={()=>navigate('/Product')}>Segui Comprando</button>
                 </div>
               </div>
             </div>
