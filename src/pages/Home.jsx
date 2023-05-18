@@ -6,21 +6,10 @@ import iconoweb from '../img/iconoweb.png'
 
 export const Home = () => {
   return (
-    <div className="home ">
-      <div className='container-fluid '>
-        <div className="row">
-          <NavLink >
-            <Image src={iconoweb}></Image>
-          </NavLink>
-          <NavLink>
-            <Image src={iconoweb}></Image>
-          </NavLink>
-          <NavLink>
-            <Image src={iconoweb}></Image>
-          </NavLink>
-          <NavLink>
-            <Image src={iconoweb}></Image>
-          </NavLink>
+    <div className="container-fluit vh-100 product">
+      <div className="container d-flex justify-content-center col-12">
+        <div className="row w-50 d-flex justify-content-center align-content-center">
+          <img className='' src={iconoweb} alt="" />
         </div>
       </div>
     </div>

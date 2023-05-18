@@ -1,34 +1,29 @@
 import '../pages/pages.css'
-import { useReducer } from "react";
-import ShoppingReduce, { shoppingInitialState } from "../component/Cart/ShoppingReduce";
-import TYPES from "../component/Cart/shoppingAction";
-import CardItem from "../component/card/CardItem";
+import { useState } from "react";
+import ItemListContainer from '../component/Cart/ItemListContainer';
 
 
 const Product = () => {
-    const [state, dispatch] = useReducer(
-      ShoppingReduce,
-      shoppingInitialState
+    const [state] = useState(
+      ItemListContainer,
       );
 
     const { products } = state;
 
-    const addToCart = (id) =>{
-      dispatch({type: TYPES.ADD_TO_CART, payload: id});
-    }
+    // const addToCart = (id) =>{
+    //   dispatch({type: TYPES.ADD_TO_CART, payload: id});
+    // }
 
   return (
-    <div className="product">
-      <h2 className="text-center">Productos</h2>
-      <div className='container d-flex justify-content-center align-content-center'>
-        <div className="row">
-          <div className="col-md-4">
-          {products.map((product) => (
-          <CardItem key={products.id} data={product} addToCart={addToCart}/>
-          ))}
+    <div className="container-fluit product">
+      <div className="container col-12">
+            <div className="row d-flex justify-content-center align-content-center">
+            {products.map((product) => (
+              <ItemListContainer/>
+            // <CardItem key={products.id} data={product} addToCart={addToCart}/>
+            ))}
+            </div>
           </div>
-        </div>
-    </div>
     </div>
   )
 }

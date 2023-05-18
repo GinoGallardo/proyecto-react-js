@@ -2,10 +2,15 @@
   margin: 0 !important;
 }
 
+.card_img{
+  width: 10em;
+  height: 10em;
+}
+
 .card{
-  width: 15em !important;
+  width: 12em !important;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
-  margin: .3em;
+  margin: .5em;
 }
 
 .card:hover{
@@ -14,7 +19,7 @@
 }
 
 .card-body{
-  padding: 2rem 0 !important;
+  padding: 1rem 0!important;
 }
 
 .crat-text {
@@ -32,4 +37,9 @@
 
 .card-img-top:hover {
   transform: scale(1.15);
+}
+
+.btn:hover{
+  color: rgb(41, 37, 37) !important;
+  background-color: #fff !important;
 }

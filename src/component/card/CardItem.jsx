@@ -1,24 +1,21 @@
-import './card.css'
-import { NavLink } from 'react-router-dom';
-import 'animate.css/animate.min.css'
+import '../card/card.css'
+import React from 'react'
 
-const CardItem = ({data, addToCart}) => {
-    let {id, name, image, descripcion, price} = data;
-
-    return (
-        <div className='card text-center bg-dark animate__animated animate__fadeInUp'>
+export const Item = ({info}) => {
+  return (
+    <div className='card text-center bg-dark animate__animated animate__fadeInUp'>
             <div className="overflow">
-            <img src={image} alt="" className='card-img-top'/>
-            </div>
-            <div className="card-body text-light">
-            <h5 className="card-title">{name}</h5>
-                <span className="card-title">${price}</span>
-                <p className="card-text text-secondary">{descripcion}</p>
-                <button href="#" className="btn btn-primary" onClick={()=> addToCart(id)}>Agregar al Carrito</button>
-                <NavLink href="#" className="btn btn-btn-outline-light rounded-0">Vista</NavLink>
+              <img src={info.image} alt="" className='card_img card-img-top'/>
+              <div className="card-body text-light">
+                <h5 className="card-title">{info.name}</h5>
+                <span className="card-title">${info.price}</span>
+                <p className="card-text text-secondary">{info.descripcion}</p>
+                <button type='button' className="btn text-white btn-btn-outline-light rounded-0 m-1">Agregar al Carrito</button>
+                <button type='button' className="btn text-white btn-btn-outline-light rounded-0 m-1">Vista</button>
+              </div>
             </div>
         </div>
-    )
+  )
 }
 
-export default CardItem;
+export default Item

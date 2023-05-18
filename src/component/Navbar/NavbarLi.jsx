@@ -13,8 +13,8 @@ export const NavbarLi = (props) => {
       name:"Productos"
     },
     {
-      path:"/ItemDetail",
-      name:<i className="bi bi-bag m-4 fs-4"></i>
+      path:"/Contacto",
+      name: 'Contácto'
     }
   ]
 
