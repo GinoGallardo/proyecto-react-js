@@ -6,6 +6,7 @@ import Navbar from '../component/Navbar/Navbar'
 import NavbarAlert from '../component/Navbar/NavbarAlert'
 import Contacto from '../pages/Contacto'
 import Detail from '../component/ItemDetail/Detail'
+import Footer from '../component/Footer/Footer'
 
 const Ruta = () => {
   
@@ -19,6 +20,7 @@ const Ruta = () => {
         <Route path='/Contacto' element={<Contacto/>} />
         <Route path='/Detail/:id' element={<Detail/>} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }

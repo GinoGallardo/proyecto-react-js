@@ -1,7 +1,6 @@
 import './navbar.css'
 import React, { Fragment } from 'react'
 import { NavbarLi } from './NavbarLi'
-// import { NavLink } from 'react-bootstrap'
 import navbarlogo from '../../img/navbarlogo.png'
 import CartWidget from './CartWidget'
 
