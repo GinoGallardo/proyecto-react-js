@@ -9,6 +9,7 @@
 
 .card{
   width: 12em !important;
+  padding: 0 !important;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
   margin: .5em;
 }

@@ -13,7 +13,7 @@ export const CartItem = ({info}) => {
                 <span className="card-title">${info.price}</span>
                 <p className="card-text text-secondary">{info.descripcion}</p>
                 <button type='button' className="btn text-white btn-btn-outline-light rounded-0 m-1">Agregar al Carrito</button>
-                <button onClick={()=>navigate(`/Detail/${info.id}`)} type='button' className="btn text-white btn-btn-outline-light rounded-0 m-1">Vista</button>
+                <button onClick={()=>navigate(`Detail/${info.id}`)} type='button' className="btn text-white btn-btn-outline-light rounded-0 m-1">Vista</button>
               </div>
             </div>
         </div>

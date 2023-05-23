@@ -28,6 +28,7 @@ import img23_f from '../../img/img23_f.jpeg';
 export const Detail = () => {
 
   const { id } = useParams()
+  const navigate = useNavigate();
 
   const [product, setProduct] = useState({});
   const [loading, setLoading] = useState(true)
@@ -66,12 +67,12 @@ export const Detail = () => {
       setLoading(false)
     }, 2000);
 
-  }, []);
+  }, [id])
 
   const agregarAlCarrito = () => {
-    navigate('/Productos')
+    
   }
-  const navigate = useNavigate()
+
 
   return (
     <Fragment>

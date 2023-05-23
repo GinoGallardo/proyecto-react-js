@@ -1,6 +1,6 @@
 import React from 'react'
 import navbarlogo from '../../img/navbarlogo.png'
-import { NavLink,gin } from 'react-router-dom';
+import { NavLink  } from 'react-router-dom';
 
 export const Footer = () => {
 

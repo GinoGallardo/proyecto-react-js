@@ -4,11 +4,9 @@ import ItemListContainer from '../component/Cart/ItemListContainer';
 
 
 const Product = (props) => {
-  const {id, image, name, price, descripcion} = props;
+  const {id} = props;
 
     const [data] = useState([]);
-
-    const { products } = data;
 
   return (
     <div className="container-fluit product">
