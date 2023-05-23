@@ -1,13 +1,11 @@
 import React, { Fragment } from 'react'
-// import Ruta from '../src/router/Ruta'
-import ItemSelect from './component/ItemDetail/ItemSelect'
-// import ItemDetail from './pages/ItemDetail'
+import Ruta from '../src/router/Ruta'
+
 
 const App = () => {
   return (
   <Fragment>
-      {/* <Ruta/> */}
-      <ItemSelect/>
+      <Ruta/>
   </Fragment>
   )
 }
