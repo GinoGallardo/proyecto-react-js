@@ -3,6 +3,7 @@ import React, { Fragment } from 'react'
 import { NavbarLi } from './NavbarLi'
 import navbarlogo from '../../img/navbarlogo.png'
 import CartWidget from './CartWidget'
+import NavbarAlert from './NavbarAlert'
 
 export const Navbar = (props) => {
 
@@ -10,6 +11,7 @@ export const Navbar = (props) => {
 
   return (
     <Fragment>
+      <NavbarAlert/>
       <nav className="navbar bg-dark z-1 navbar-expand-lg position-sticky position">
         <div className="container">
             <img className='navbarLogo' src={navbarlogo} alt="" />
