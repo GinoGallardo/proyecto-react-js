@@ -20,38 +20,3 @@ const Product = (props) => {
 }
 
 export default Product
-
-
-// import { useState } from 'react';
-// import data from '../component/dataProducts/data';
-
-// const Product = () => {
-	  
-//   const allCategories = [
-//     'ALL',
-//     ...new Set( data.map(article => article.category))
-//   ];
-
-//   const [categories, setCategories] = useState(allCategories)
-//   const [articles, setArticles] = useState(data)
-
-//   const filterCategory = (category) => {
-//     if (category === 'ALL'){
-//       setCategories(data)
-//       return
-//     }
-
-//     const filteredData =data.filter(article => article.category === category)
-//     setArticles(filteredData)
-//   }
-
-// 	return (
-// 		<>
-//     <div>gino</div>
-// 			<categoriaButton categories={categories} filterCategory={filterCategory}/>
-// 			<categoriaArticle articles={articles}/>
-// 		</>
-// 	);
-// }
-
-// export default Product;

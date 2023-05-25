@@ -7,6 +7,7 @@ import Detail from '../component/ItemDetail/Detail'
 import Footer from '../component/Footer/Footer'
 import Error404 from '../component/error/Error404'
 import MainLayout from '../Layout/MainLayout'
+import ItemListContainer from '../component/Cart/ItemListContainer'
 
 const Ruta = () => {
   
@@ -18,6 +19,7 @@ const Ruta = () => {
           <Route path='Product' element={<Product/>} />
           <Route path='Contacto' element={<Contacto/>} />
           <Route path='/pages/ItemDetail/:id' element={<Detail/>} />
+          <Route path='/category/:categoryid' element={<ItemListContainer/>} />
         </Route>
         <Route>
           <Route path='*' Element={<Error404/>}/>

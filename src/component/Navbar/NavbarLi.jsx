@@ -14,7 +14,7 @@ export const NavbarLi = (props) => {
     },
     {
       path:"/Contacto",
-      name: 'Contácto'
+      name: <i className="bi bi-bag m-4 fs-4"> </i>
     }
   ]
 

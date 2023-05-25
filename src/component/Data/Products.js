@@ -25,7 +25,7 @@ import img23_f from '../../img/img23_f.jpeg'
 const Products = [
   {
     id: 1,
-    category: 'woman',
+    category: 'Woman',
     name: 'Producto gino',
     image: img1_f,
     descripcion:'Descripcion',
@@ -33,7 +33,7 @@ const Products = [
   },
   {
     id: 2,
-    category: 'woman',
+    category: 'Woman',
     name: 'Producto 2',
     image: img2_f,
     descripcion:'Descripcion',
@@ -41,7 +41,7 @@ const Products = [
   },
   {
     id: 3,
-    category: 'woman',
+    category: 'Woman',
     name: 'Producto 3',
     image: img3_f,
     descripcion:'Descripcion',
@@ -49,7 +49,7 @@ const Products = [
   },
   {
     id: 4,
-    category: 'woman',
+    category: 'Woman',
     name: 'Producto 4',
     image: img4_f,
     descripcion:'Descripcion',
@@ -57,7 +57,7 @@ const Products = [
   },
   {
     id: 5,
-    category: 'woman',
+    category: 'Woman',
     name: 'Producto 5',
     image:img5_f ,
     descripcion:'Descripcion',
@@ -65,7 +65,7 @@ const Products = [
   },
   {
     id: 6,
-    category: 'men',
+    category: 'Man',
     name: 'Producto 6',
     image:img6_h ,
     descripcion:'Descripcion',
@@ -73,7 +73,7 @@ const Products = [
   },
   {
     id: 7,
-    category: 'woman_children',
+    category: 'Woman_children',
     name: 'Producto 1',
     image: img7_f_n ,
     descripcion:'Descripcion',
@@ -81,7 +81,7 @@ const Products = [
   },
   {
     id: 8,
-    category: 'woman_children',
+    category: 'Woman_children',
     name: 'Producto 2',
     image:img8_f_n,
     descripcion:'Descripcion',
@@ -89,7 +89,7 @@ const Products = [
   },
   {
     id: 9,
-    category: 'woman',
+    category: 'Woman',
     name: 'Producto 3',
     image:img9_f,
     descripcion:'Descripcion',
@@ -97,21 +97,21 @@ const Products = [
   },
   {
     id: 10,
-    category: 'woman_children',
+    category: 'Woman_children',
     name: 'Producto 4',
     image: img10_f_n,
     descripcion:'Descripcion', price: 400
   },
   {
     id: 11,
-    category: 'woman_children',
+    category: 'Woman_children',
     name: 'Producto 4',
     image: img11_f_n,
     descripcion:'Descripcion', price: 400
   },
   {
     id: 12,
-    category: 'men',
+    category: 'Man',
     name: 'Producto 5',
     image: img12_h,
     descripcion:'Descripcion',
@@ -119,7 +119,7 @@ const Products = [
   },
   {
     id: 13,
-    category: 'men',
+    category: 'Man',
     name: 'Producto 6',
     image: img13_h,
     descripcion:'Descripcion',
@@ -127,7 +127,7 @@ const Products = [
   },
   {
     id: 14,
-    category: 'woman_children',
+    category: 'Woman_children',
     name: 'Producto 1',
     image: img14_f_n,
     descripcion:'Descripcion',
@@ -135,7 +135,7 @@ const Products = [
   },
   {
     id: 15,
-    category: 'men',
+    category: 'Man',
     name: 'Producto 2',
     image:img15_h,
     descripcion:'Descripcion',
@@ -143,7 +143,7 @@ const Products = [
   },
   {
     id: 16,
-    category: 'men',
+    category: 'Man',
     name: 'Producto 3',
     image: img16_h,
     descripcion:'Descripcion',
@@ -151,14 +151,14 @@ const Products = [
   },
   {
     id: 17,
-    category: 'woman',
+    category: 'Woman',
     name: 'Producto 4',
     image: img17_f,
     descripcion:'Descripcion', price: 400
   },
   {
     id: 18,
-    category: 'woman_children',
+    category: 'Woman_children',
     name: 'Producto 5',
     image: img18_f_n,
     descripcion:'Descripcion',
@@ -166,7 +166,7 @@ const Products = [
   },
   {
     id: 19,
-    category: 'men',
+    category: 'Man',
     name: 'Producto 6',
     image: img19_h,
     descripcion:'Descripcion',
@@ -174,7 +174,7 @@ const Products = [
   },
   {
     id: 20,
-    category: 'men',
+    category: 'Man',
     name: 'Producto 2',
     image: img20_h,
     descripcion:'Descripcion',
@@ -182,7 +182,7 @@ const Products = [
   },
   {
     id: 21,
-    category: 'woman',
+    category: 'Woman',
     name: 'Producto 3',
     image: img21_f,
     descripcion:'Descripcion',
@@ -190,7 +190,7 @@ const Products = [
   },
   {
     id: 22,
-    category: 'woman',
+    category: 'Woman',
     name: 'Producto 4',
     image: img22_f,
     descripcion:'Descripcion',
@@ -198,7 +198,7 @@ const Products = [
   },
   {
     id: 23,
-    category: 'woman',
+    category: 'Woman',
     name: 'Producto 5',
     image: img23_f,
     descripcion:'Descripcion',

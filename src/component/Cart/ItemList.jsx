@@ -1,17 +1,13 @@
-import { useState } from 'react'
 import React from 'react'
-import Products from '../Data/Products'
 import CardItem from '../card/CardItem'
 
-export const ItemList = () => {
-  const [data]=useState(Products);
+export const ItemList = ({data}) => {
 
   return (
     <>
-      {data.map((Products) =>{
-      const {id}=data;
+      {data.map((prod) =>{
 			return(
-        <CardItem key={id} data={Products}/>
+        <CardItem key={prod.id} data={prod}/>
         )
       })
     }

@@ -1,36 +1,32 @@
-import React, { useState } from 'react';
-import Products from '../Data/Products';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Category = () => {
-  const [data, setData] = useState(Products);
-
-  const filterResult = (catItem) => {
-    const result = Products.filter((curData) => {
-      return curData.category === catItem;
-    });
-    setData(result);
-  };
 
   return (
     <>
-      <button className='btn btn-warning w-100 mb-4' onClick={() => filterResult('men')}>
-        Hombre
-      </button>
-
-      <button className='btn btn-warning w-100 mb-4' onClick={() => filterResult('woman')}>
-        Mujer
-      </button>
-
-      <button className='btn btn-warning w-100 mb-4' onClick={() => filterResult('woman_children')}>
-        Niña
-      </button>
-
-      <button className='btn btn-warning w-100 mb-4' onClick={() => filterResult('all')}>
-        Todo
-      </button>
+      <Link to='/category/Man'>
+        <button className='btn btn-warning w-100 mb-4'>
+          Hombre
+        </button>
+      </Link>
+      <Link to='/category/Woman'>
+        <button className='btn btn-warning w-100 mb-4'>
+          Woman
+        </button>
+      </Link>
+      <Link to='/category/Woman_children'>
+        <button className='btn btn-warning w-100 mb-4'>
+          Niña
+        </button>
+      </Link>
+      <Link to='/category/id'>
+        <button className='btn btn-warning w-100 mb-4'>
+          Todo
+        </button>
+      </Link>
     </>
   );
 };
 
 export default Category;
-
