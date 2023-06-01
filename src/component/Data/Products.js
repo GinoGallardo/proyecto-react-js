@@ -26,7 +26,7 @@ const Products = [
   {
     id: '1',
     marca: 'BRIGITTE',
-    category: 'Woman',
+    categoria: 'Mujer',
     modelo: 'Art. 2300',
     image: img1_f,
     descripcion:'Descripcion',
@@ -35,7 +35,7 @@ const Products = [
   {
     id: '2',
     marca: 'TIENTO',
-    category: 'Woman',
+    categoria: 'Mujer',
     modelo: 'Art. 406',
     image: img2_f,
     descripcion:'Descripcion',
@@ -44,7 +44,7 @@ const Products = [
   {
     id: '3',
     marca: 'LARA',
-    category: 'Woman',
+    categoria: 'Mujer',
     modelo: 'Art. 4680 Gris',
     image: img3_f,
     descripcion:'Descripcion',
@@ -53,7 +53,7 @@ const Products = [
   {
     id: '4',
     marca: 'LARA',
-    category: 'Woman',
+    categoria: 'Mujer',
     modelo: 'Art. 4680 Blanco',
     image: img4_f,
     descripcion:'Descripcion',
@@ -62,7 +62,7 @@ const Products = [
   {
     id: '5',
     marca: 'KAURY',
-    category: 'Woman',
+    categoria: 'Mujer',
     modelo: 'Art. 8167',
     image:img5_f ,
     descripcion:'Descripcion',
@@ -71,7 +71,7 @@ const Products = [
   {
     id: '6',
     marca: 'LAMBO',
-    category: 'Man',
+    categoria: 'Hombre',
     modelo: 'Art. Azúl',
     image:img6_h ,
     descripcion:'Descripcion',
@@ -80,7 +80,7 @@ const Products = [
   {
     id: '7',
     marca: 'MAREY',
-    category: 'Woman_children',
+    categoria: 'Niña',
     modelo: 'Art. 744',
     image: img7_f_n ,
     descripcion:'Descripcion',
@@ -89,7 +89,7 @@ const Products = [
   {
     id: '8',
     marca: 'LARA',
-    category: 'Woman_children',
+    categoria: 'Niña',
     modelo: 'Art. 5700',
     image:img8_f_n,
     descripcion:'Descripcion',
@@ -98,7 +98,7 @@ const Products = [
   {
     id: '9',
     marca: 'MARREY',
-    category: 'Woman',
+    categoria: 'Mujer',
     modelo: 'Art. 500',
     image:img9_f,
     descripcion:'Descripcion',
@@ -107,7 +107,7 @@ const Products = [
   {
     id: '10',
     marca:'MAMÁ QUIERO',
-    category: 'Woman_children',
+    categoria: 'Niña',
     modelo: 'Pack Bombacha Nena',
     image: img10_f_n,
     descripcion:'Descripcion', price: 400
@@ -115,7 +115,7 @@ const Products = [
   {
     id: '11',
     marca: 'MARREY',
-    category: 'Woman_children',
+    categoria: 'Niña',
     modelo: 'Art. 3020',
     image: img11_f_n,
     descripcion:'Descripcion', price: 400
@@ -123,7 +123,7 @@ const Products = [
   {
     id: '12',
     marca: 'G3',
-    category: 'Man',
+    categoria: 'Hombre',
     modelo: 'Pijama + Pantuflas (Gris)',
     image: img12_h,
     descripcion:'Descripcion',
@@ -132,7 +132,7 @@ const Products = [
   {
     id: '13',
     marca: 'G3',
-    category: 'Man',
+    categoria: 'Hombre',
     modelo: 'Pijama + Pantuflas (Azul)',
     image: img13_h,
     descripcion:'Descripcion',
@@ -141,7 +141,7 @@ const Products = [
   {
     id: '14',
     marca: 'MAMÁ QUIERO',
-    category: 'Woman_children',
+    categoria: 'Niña',
     modelo: 'Pack Bombacha Nena',
     image: img14_f_n,
     descripcion:'Descripcion',
@@ -150,7 +150,7 @@ const Products = [
   {
     id: '15',
     marca: 'Victiria Secret',
-    category: 'Man',
+    categoria: 'Hombre',
     modelo: 'Producto 2',
     image:img15_h,
     descripcion:'Descripcion',
@@ -159,7 +159,7 @@ const Products = [
   {
     id: '16',
     marca: 'ELEMENTO',
-    category: 'Man',
+    categoria: 'Hombre',
     modelo: 'Art. 730',
     image: img16_h,
     descripcion:'Descripcion',
@@ -168,7 +168,7 @@ const Products = [
   {
     id: '17',
     marca: 'BERLÍN',
-    category: 'Woman',
+    categoria: 'Mujer',
     modelo: 'Art. 28',
     image: img17_f,
     descripcion:'Descripcion', price: 400
@@ -176,7 +176,7 @@ const Products = [
   {
     id: '18',
     marca: 'Dufour',
-    category: 'Woman_children',
+    categoria: 'Niña',
     modelo: 'Producto 5',
     image: img18_f_n,
     descripcion:'Descripcion',
@@ -185,7 +185,7 @@ const Products = [
   {
     id: '19',
     marca: 'ZORBA',
-    category: 'Man',
+    categoria: 'Hombre',
     modelo: 'Boxer Varios Colores',
     image: img19_h,
     descripcion:'Descripcion',
@@ -194,7 +194,7 @@ const Products = [
   {
     id: '20',
     marca: 'DUFOUR',
-    category: 'Man',
+    categoria: 'Hombre',
     modelo: 'Boxer Gris',
     image: img20_h,
     descripcion:'Descripcion',
@@ -203,7 +203,7 @@ const Products = [
   {
     id: '21',
     marca: 'MELIFERA',
-    category: 'Woman',
+    categoria: 'Mujer',
     modelo: 'Art. 4130',
     image: img21_f,
     descripcion:'Descripcion',
@@ -212,7 +212,7 @@ const Products = [
   {
     id: '22',
     marca: 'GEORGETTE',
-    category: 'Woman Pijamas',
+    categoria: 'Mujer Pijamas',
     modelo: 'Art. 362',
     image: img22_f,
     descripcion:'Descripcion',
@@ -221,7 +221,7 @@ const Products = [
   {
     id: '23',
     marca: 'GEORGETTE',
-    category: 'Woman Pijamas',
+    categoria: 'Mujer Pijamas',
     modelo: 'Art. 373',
     image: img23_f,
     descripcion:'Descripcion',

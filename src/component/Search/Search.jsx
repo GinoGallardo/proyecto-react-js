@@ -1,16 +1,21 @@
 import React from 'react';
+import './search.css'
 
 const Search = ({ filter, onSearch }) => {
   return (
-    <div className="col-12 mb-5">
+    <div className="col-12 mt-3 mb-5">
       <div className="mb-3 col-12 mx-auto text-center">
-        <label className="form-label h4">Search</label>
-        <input
+        <form className='d-flex align-items-center border p-1' action="">
+          <label for='search'><i class="bi bi-search"></i></label>
+          <input
           type="text"
-          className="form-control"
+          id='search'
+          className="search"
           value={filter}
           onChange={onSearch}
+          placeholder='Search'
         />
+        </form>
       </div>
     </div>
   );

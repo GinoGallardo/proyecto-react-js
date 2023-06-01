@@ -2,31 +2,29 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Category = () => {
+  const nombre = [
+    {
+      name: 'Hombre'
+    },
+    {
+      name: 'Mujer'
+    },
+    {
+      name: 'Todo'
+    }
+  ]
 
   return (
     <>
-      <div className="container z-n1">
-      <Link to='/category/Man'>
-        <button className='btn btn-warning w-100 mb-4'>
-          Hombre
+    {
+      nombre.map(({name},index)=>(
+        <Link key={index} to='/category/Man'>
+          <button className='btn btn-warning w-100 mb-4'>
+          {name}
         </button>
-      </Link>
-      <Link to='/category/Woman'>
-        <button className='btn btn-warning w-100 mb-4'>
-          Woman
-        </button>
-      </Link>
-      <Link to='/category/Woman_children'>
-        <button className='btn btn-warning w-100 mb-4'>
-          Niña
-        </button>
-      </Link>
-      <Link to='/category/id'>
-        <button className='btn btn-warning w-100 mb-4'>
-          Todo
-        </button>
-      </Link>
-      </div>
+      </Link>  
+      ))
+    }
     </>
   );
 };

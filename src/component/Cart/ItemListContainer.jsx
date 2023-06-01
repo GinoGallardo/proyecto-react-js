@@ -16,6 +16,8 @@ export const ItemListContainer = (props) => {
         resolve(Products);
       }, 1000);
     });
+
+
   };
 
   const getDataByCategory = (category) => {
@@ -46,10 +48,11 @@ export const ItemListContainer = (props) => {
 
   return (
     <>
+      <div className='d-flex justify-content-center'>
       <div className="container-fluid col-md-3 mt-0 mx-2 ">
         <div className="col-md-3 position-fixed">
           <Search filter={filter} onSearch={searchText} />
-          <Category data={data} />
+          <Category filter={filter} onSearch={searchText} />
         </div>
       </div>
       <div className="row col-md-9 d-flex justify-content-center">
@@ -59,6 +62,7 @@ export const ItemListContainer = (props) => {
             <ItemList data={productsSearch} />
           </div>
         </div>
+      </div>
       </div>
     </>
   );

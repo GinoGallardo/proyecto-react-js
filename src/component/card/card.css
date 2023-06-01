@@ -5,6 +5,7 @@
 .card_img{
   width: 10em;
   height: 10em;
+  border-radius: 0 !important;
 }
 
 .card{
@@ -12,20 +13,22 @@
   padding: 0 !important;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
   margin: .5em;
+  border-radius: 0 !important;
 }
 
 .card:hover{
-  box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273) !important;
+  border: solid .1em #000;
+  box-shadow: 5px 10px 20px 1px rgba(12, 12, 12, 0.273) !important;
   transition: all 0.5s linear;
+
 }
 
 .card-body{
   padding: 1rem 0!important;
 }
 
-.crat-text {
-  padding: 0.3rem 1rem;
-  font-size: 1rem;
+.text-marca {
+  font-size: 1.3rem;
 }
 
 .overflow {
@@ -41,6 +44,6 @@
 }
 
 .btn:hover{
-  color: rgb(41, 37, 37) !important;
-  background-color: #fff !important;
+  color:  #fff !important;
+  background-color: rgb(41, 37, 37) !important;
 }

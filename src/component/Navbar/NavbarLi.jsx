@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 import { NavLink } from 'react-router-dom'
 
 export const NavbarLi = (props) => {
-  // const {navbar_items} = props
+
   const navbar_items = [
     {
       path:"/",
