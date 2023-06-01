@@ -24,182 +24,205 @@ import img23_f from '../../img/img23_f.jpeg'
 
 const Products = [
   {
-    id: 1,
+    id: '1',
+    marca: 'BRIGITTE',
     category: 'Woman',
-    name: 'Producto gino',
+    modelo: 'Art. 2300',
     image: img1_f,
     descripcion:'Descripcion',
-    price: 100
+    price: 300
   },
   {
-    id: 2,
+    id: '2',
+    marca: 'TIENTO',
     category: 'Woman',
-    name: 'Producto 2',
+    modelo: 'Art. 406',
     image: img2_f,
     descripcion:'Descripcion',
-    price: 200
+    price: 300
   },
   {
-    id: 3,
+    id: '3',
+    marca: 'LARA',
     category: 'Woman',
-    name: 'Producto 3',
+    modelo: 'Art. 4680 Gris',
     image: img3_f,
     descripcion:'Descripcion',
     price: 300
   },
   {
-    id: 4,
+    id: '4',
+    marca: 'LARA',
     category: 'Woman',
-    name: 'Producto 4',
+    modelo: 'Art. 4680 Blanco',
     image: img4_f,
     descripcion:'Descripcion',
     price: 400
   },
   {
-    id: 5,
+    id: '5',
+    marca: 'KAURY',
     category: 'Woman',
-    name: 'Producto 5',
+    modelo: 'Art. 8167',
     image:img5_f ,
     descripcion:'Descripcion',
     price: 500
   },
   {
-    id: 6,
+    id: '6',
+    marca: 'LAMBO',
     category: 'Man',
-    name: 'Producto 6',
+    modelo: 'Art. Azúl',
     image:img6_h ,
     descripcion:'Descripcion',
     price: 600
   },
   {
-    id: 7,
+    id: '7',
+    marca: 'MAREY',
     category: 'Woman_children',
-    name: 'Producto 1',
+    modelo: 'Art. 744',
     image: img7_f_n ,
     descripcion:'Descripcion',
     price: 100
   },
   {
-    id: 8,
+    id: '8',
+    marca: 'LARA',
     category: 'Woman_children',
-    name: 'Producto 2',
+    modelo: 'Art. 5700',
     image:img8_f_n,
     descripcion:'Descripcion',
     price: 200
   },
   {
-    id: 9,
+    id: '9',
+    marca: 'MARREY',
     category: 'Woman',
-    name: 'Producto 3',
+    modelo: 'Art. 500',
     image:img9_f,
     descripcion:'Descripcion',
     price: 300
   },
   {
-    id: 10,
+    id: '10',
+    marca:'MAMÁ QUIERO',
     category: 'Woman_children',
-    name: 'Producto 4',
+    modelo: 'Pack Bombacha Nena',
     image: img10_f_n,
     descripcion:'Descripcion', price: 400
   },
   {
-    id: 11,
+    id: '11',
+    marca: 'MARREY',
     category: 'Woman_children',
-    name: 'Producto 4',
+    modelo: 'Art. 3020',
     image: img11_f_n,
     descripcion:'Descripcion', price: 400
   },
   {
-    id: 12,
+    id: '12',
+    marca: 'G3',
     category: 'Man',
-    name: 'Producto 5',
+    modelo: 'Pijama + Pantuflas (Gris)',
     image: img12_h,
     descripcion:'Descripcion',
     price: 500
   },
   {
-    id: 13,
+    id: '13',
+    marca: 'G3',
     category: 'Man',
-    name: 'Producto 6',
+    modelo: 'Pijama + Pantuflas (Azul)',
     image: img13_h,
     descripcion:'Descripcion',
     price: 600
   },
   {
-    id: 14,
+    id: '14',
+    marca: 'MAMÁ QUIERO',
     category: 'Woman_children',
-    name: 'Producto 1',
+    modelo: 'Pack Bombacha Nena',
     image: img14_f_n,
     descripcion:'Descripcion',
     price: 100
   },
   {
-    id: 15,
+    id: '15',
+    marca: 'Victiria Secret',
     category: 'Man',
-    name: 'Producto 2',
+    modelo: 'Producto 2',
     image:img15_h,
     descripcion:'Descripcion',
     price: 200
   },
   {
-    id: 16,
+    id: '16',
+    marca: 'ELEMENTO',
     category: 'Man',
-    name: 'Producto 3',
+    modelo: 'Art. 730',
     image: img16_h,
     descripcion:'Descripcion',
     price: 300
   },
   {
-    id: 17,
+    id: '17',
+    marca: 'BERLÍN',
     category: 'Woman',
-    name: 'Producto 4',
+    modelo: 'Art. 28',
     image: img17_f,
     descripcion:'Descripcion', price: 400
   },
   {
-    id: 18,
+    id: '18',
+    marca: 'Dufour',
     category: 'Woman_children',
-    name: 'Producto 5',
+    modelo: 'Producto 5',
     image: img18_f_n,
     descripcion:'Descripcion',
     price: 500
   },
   {
-    id: 19,
+    id: '19',
+    marca: 'ZORBA',
     category: 'Man',
-    name: 'Producto 6',
+    modelo: 'Boxer Varios Colores',
     image: img19_h,
     descripcion:'Descripcion',
     price: 600
   },
   {
-    id: 20,
+    id: '20',
+    marca: 'DUFOUR',
     category: 'Man',
-    name: 'Producto 2',
+    modelo: 'Boxer Gris',
     image: img20_h,
     descripcion:'Descripcion',
     price: 200
   },
   {
-    id: 21,
+    id: '21',
+    marca: 'MELIFERA',
     category: 'Woman',
-    name: 'Producto 3',
+    modelo: 'Art. 4130',
     image: img21_f,
     descripcion:'Descripcion',
     price: 300
   },
   {
-    id: 22,
-    category: 'Woman',
-    name: 'Producto 4',
+    id: '22',
+    marca: 'GEORGETTE',
+    category: 'Woman Pijamas',
+    modelo: 'Art. 362',
     image: img22_f,
     descripcion:'Descripcion',
     price: 400
   },
   {
-    id: 23,
-    category: 'Woman',
-    name: 'Producto 5',
+    id: '23',
+    marca: 'GEORGETTE',
+    category: 'Woman Pijamas',
+    modelo: 'Art. 373',
     image: img23_f,
     descripcion:'Descripcion',
     price: 500

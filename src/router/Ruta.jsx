@@ -4,7 +4,6 @@ import Home from '../pages/Home'
 import Product from '../pages/Product'
 import Contacto from '../pages/Contacto'
 import Detail from '../component/ItemDetail/Detail'
-import Footer from '../component/Footer/Footer'
 import Error404 from '../component/error/Error404'
 import MainLayout from '../Layout/MainLayout'
 import ItemListContainer from '../component/Cart/ItemListContainer'
@@ -22,10 +21,9 @@ const Ruta = () => {
           <Route path='/category/:categoryid' element={<ItemListContainer/>} />
         </Route>
         <Route>
-          <Route path='*' Element={<Error404/>}/>
+          <Route path="*" Element={<Error404/>}/>
         </Route>
       </Routes>
-      <Footer/>
     </BrowserRouter>
   )
 }

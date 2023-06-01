@@ -5,6 +5,7 @@ const Category = () => {
 
   return (
     <>
+      <div className="container z-n1">
       <Link to='/category/Man'>
         <button className='btn btn-warning w-100 mb-4'>
           Hombre
@@ -25,6 +26,7 @@ const Category = () => {
           Todo
         </button>
       </Link>
+      </div>
     </>
   );
 };

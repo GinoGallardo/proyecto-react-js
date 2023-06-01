@@ -1,18 +1,18 @@
 .home{
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #fff;
 }
 
 .product{
   width: 100%;
-  padding: 2em;
-  background: linear-gradient(
+  padding: .5em;
+  /* background: linear-gradient(
     180deg,
     rgba(238, 69, 64, 1) 0%,
     rgba(199, 44, 65, 1) 15%,
     rgba(128, 19, 54, 1) 30%,
     rgba(81, 10, 50, 1) 45%,
     rgba(45, 20, 44, 1) 100%
-  );
+  ); */
   flex-wrap: wrap;
 }
 
@@ -20,3 +20,7 @@
   width: 100%;
 }
 
+.contacto{
+  color: aliceblue;
+  background-color: black;
+}

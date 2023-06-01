@@ -10,11 +10,12 @@ export const CartItem = ({data}) => {
             <div className="overflow">
               <img src={data.image} alt="" className='card_img card-img-top'/>
               <div className="card-body text-light">
-                <h5 className="card-title">{data.name}</h5>
+                <h5 className="card-title">{data.marca}</h5>
+                <span className="card-title">{data.modelo}</span>
+                <hr className='col-10 m-auto'/>
                 <span className="card-title">${data.price}</span>
-                <p className="card-text text-secondary">{data.descripcion}</p>
-                <button type='button' className="btn text-white btn-btn-outline-light rounded-0 m-1">Agregar al Carrito</button>
-                <button onClick={() => navigate(`../../pages/ItemDetail/${data.id}`)}  type='button' className="btn text-white btn-btn-outline-light rounded-0 m-1">Vista</button>
+                <button type='button' className="btn border text-white btn-btn-outline-light rounded-0 m-1">Agregar al Carrito</button>
+                <button onClick={() => navigate(`../../pages/ItemDetail/${data.id}`)}  type='button' className="btn border text-white btn-btn-outline-light rounded-0 m-1">Vista</button>
               </div>
             </div>
         </div>
