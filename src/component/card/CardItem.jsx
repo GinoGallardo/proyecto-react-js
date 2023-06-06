@@ -7,7 +7,7 @@ export const CartItem = ({data}) => {
 
   return (
     <div className='card text-center animate__animated animate__fadeInUp'>
-            <div className="overflow">
+            <div className=" overflow">
               <img src={data.image} alt="" className='card_img card-img-top'/>
               <div className="card-body text-dark">
                 <h3 className="text-marca card-title">{data.marca}</h3>

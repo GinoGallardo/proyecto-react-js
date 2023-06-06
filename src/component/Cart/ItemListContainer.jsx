@@ -6,19 +6,21 @@ import { useParams } from 'react-router-dom';
 import Search from '../Search/Search';
 
 export const ItemListContainer = (props) => {
-  const [data, setData] = useState([]);
+  const [data, setData ] = useState([]);
   const [filter, setFilter] = useState('');
   const { categoryId } = useParams();
 
-  const getData = () => {
+  const fetchData = () => {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(Products);
-      }, 1000);
+      }, 2000);
     });
-
-
   };
+
+  useEffect(() => {
+    fetchData().then((res) => setData(res));
+  }, []);
 
   const getDataByCategory = (category) => {
     return new Promise((res, rej) => {
@@ -32,7 +34,7 @@ export const ItemListContainer = (props) => {
     if (categoryId) {
       getDataByCategory(categoryId).then((res) => setData(res));
     } else {
-      getData().then((res) => setData(res));
+      fetchData().then((res) => setData(res));
     }
   }, [categoryId]);
 
@@ -56,7 +58,7 @@ export const ItemListContainer = (props) => {
         </div>
       </div>
       <div className="row col-md-9 d-flex justify-content-center">
-        <div className="col-md-11">
+        <div className=" col-md-11">
           <h2 className="text-center text-dark animate__rubberBand">Selecciona tus productos!!!</h2>
           <div className="row">
             <ItemList data={productsSearch} />

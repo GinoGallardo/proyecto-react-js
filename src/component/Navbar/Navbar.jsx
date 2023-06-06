@@ -2,7 +2,7 @@ import './navbar.css'
 import React, { Fragment } from 'react'
 import { NavbarLi } from './NavbarLi'
 import navbarlogo from '../../img/navbarlogo.png'
-import CartWidget from './CartWidget'
+import CartWidget from '../CartWidget/CartWidget'
 import NavbarAlert from './NavbarAlert'
 
 export const Navbar = (props) => {
