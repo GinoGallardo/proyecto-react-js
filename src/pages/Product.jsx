@@ -1,6 +1,6 @@
 import '../pages/pages.css'
 import { useState } from "react";
-import ItemListContainer from '../component/Cart/ItemListContainer';
+import ItemListContainer from '../component/ItemListContainer/ItemListContainer';
 
 
 const Product = (props) => {

@@ -1,8 +1,8 @@
-import '../card/card.css'
+import '../Item/card.css'
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
-export const CartItem = ({data}) => {
+export const Item = ({data}) => {
   const navigate = useNavigate ();
 
   return (
@@ -22,4 +22,4 @@ export const CartItem = ({data}) => {
   );
 };
 
-export default CartItem
+export default Item

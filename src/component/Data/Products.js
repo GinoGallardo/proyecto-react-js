@@ -212,7 +212,7 @@ const Products = [
   {
     id: '22',
     marca: 'GEORGETTE',
-    categoria: 'Mujer Pijamas',
+    categoria: 'Mujer',
     modelo: 'Art. 362',
     image: img22_f,
     descripcion:'Descripcion',
@@ -221,7 +221,7 @@ const Products = [
   {
     id: '23',
     marca: 'GEORGETTE',
-    categoria: 'Mujer Pijamas',
+    categoria: 'Mujer',
     modelo: 'Art. 373',
     image: img23_f,
     descripcion:'Descripcion',
