@@ -80,7 +80,7 @@ const Products = [
   {
     id: '7',
     marca: 'MAREY',
-    categoria: 'Niña',
+    categoria: 'Mujer_Children',
     modelo: 'Art. 744',
     image: img7_f_n ,
     descripcion:'Descripcion',
@@ -89,7 +89,7 @@ const Products = [
   {
     id: '8',
     marca: 'LARA',
-    categoria: 'Niña',
+    categoria: 'Mujer_Children',
     modelo: 'Art. 5700',
     image:img8_f_n,
     descripcion:'Descripcion',
@@ -107,7 +107,7 @@ const Products = [
   {
     id: '10',
     marca:'MAMÁ QUIERO',
-    categoria: 'Niña',
+    categoria: 'Mujer_Children',
     modelo: 'Pack Bombacha Nena',
     image: img10_f_n,
     descripcion:'Descripcion', price: 400
@@ -115,7 +115,7 @@ const Products = [
   {
     id: '11',
     marca: 'MARREY',
-    categoria: 'Niña',
+    categoria: 'Mujer_Children',
     modelo: 'Art. 3020',
     image: img11_f_n,
     descripcion:'Descripcion', price: 400
@@ -141,7 +141,7 @@ const Products = [
   {
     id: '14',
     marca: 'MAMÁ QUIERO',
-    categoria: 'Niña',
+    categoria: 'Mujer_Children',
     modelo: 'Pack Bombacha Nena',
     image: img14_f_n,
     descripcion:'Descripcion',
@@ -176,7 +176,7 @@ const Products = [
   {
     id: '18',
     marca: 'Dufour',
-    categoria: 'Niña',
+    categoria: 'Mujer_Children',
     modelo: 'Producto 5',
     image: img18_f_n,
     descripcion:'Descripcion',

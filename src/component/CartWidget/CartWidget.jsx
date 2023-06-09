@@ -1,13 +1,19 @@
-import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
+import { useCartContext } from "../../Context/CartContext";
 
-export const CartWidget = () => {
-  const navigate = useNavigate()
+const CartWidget = () => {
+	const { totalProducts } = useCartContext();
 
-  return (
-    <Link onClick={()=>navigate('/src/component/ItemDetail/CartWidgetDetail')} ><i className="bi bi-bag m-4 fs-4"></i></Link>
-    
-  )
-}
+	return (
+		<>
+			<Link className="container d-flex text-light text-decoration-none border"
+						to='/Cart'>
+				<i className="bi bi-cart3"></i>
+				<span className="ms-2">{totalProducts() || ""}</span>
+			</Link>
+		</>
+	);
+};
 
-export default CartWidget
+export default CartWidget;

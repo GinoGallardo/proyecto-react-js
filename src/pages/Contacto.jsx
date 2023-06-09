@@ -22,14 +22,14 @@ export const Contacto = () => {
           </div>
         </div>
         <form className="row col-md-7">
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" required class="form-control" id="email" placeholder="name@example.com">
+          <div className="mb-3">
+            <label for="email" className="form-label">Email</label>
+            <input type="email" required className="form-control" id="email" placeholder="name@example.com">
             </input>
           </div>
           <div class="mb-3">
-            <label for="textarea" class="form-label">Dejame tu mensaje:</label>
-            <textarea class="form-control" required id="textarea" rows="3"></textarea>
+            <label for="textarea" className="form-label">Dejame tu mensaje:</label>
+            <textarea className="form-control" required id="textarea" rows="3"></textarea>
           </div>
           <div className='d-flex justify-content-end'>
             <input className='btn btn-secondary btn-sm' type="button" value='Enviar' />

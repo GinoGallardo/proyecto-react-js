@@ -3,7 +3,7 @@
 }
 
 .card_img{
-  width: 10em;
+  width: 8em;
   height: 10em;
   border-radius: 0 !important;
 }
@@ -24,7 +24,7 @@
 }
 
 .card-body{
-  padding: 1rem 0!important;
+  padding: .8rem 0!important;
 }
 
 .text-marca {

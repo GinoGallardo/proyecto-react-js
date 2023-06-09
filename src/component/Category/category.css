@@ -2,5 +2,6 @@
   padding: 1rem;
   background-color: #221f1f;
 }
-.btn{
+.btn:hover{
+  background: linear-gradient(black red) !important;
 }
