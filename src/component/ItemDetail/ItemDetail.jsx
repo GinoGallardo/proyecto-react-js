@@ -1,5 +1,6 @@
+import './detail.css';
 import 'animate.css';
-import { DotSpinner } from '@uiball/loaders'
+import { Orbit } from '@uiball/loaders'
 import React, { Fragment, useEffect, useState } from 'react'
 import { Link, useParams, useNavigate } from 'react-router-dom'
 import ItemCount from '../ItemCount/ItemCount'
@@ -29,18 +30,18 @@ export const ItemDetail = ({ data }) => {
     <Fragment>
       <div className="container">
         <div className="row d-flex justify-content-center">
-          {loading && <span className='loading d-flex justify-content-center align-items-center'><DotSpinner size={80} speed={0.9} color="black" /></span>}
+          {loading && <span className='loading d-flex justify-content-center align-items-center'><Orbit size={35} color="#231F20" /></span>}
           {!loading && (
             <div className='container d-lg-flex mt-5 mb-5'>
               <div className="row animate__fadeInLeft d-lg-flex justify-content-center align-content-center col-lg-5">
-                <img className='p-0 w-75' src={data.image} alt="" />
+                <img className='w-75' src={data.image} alt="" />
               </div>
               <div className="row mt-2 col-lg-7">
-                <div className="container ms-lg-5 mb-4">
-                  <h3 className='ms-4'>{data.marca}</h3>
-                  <h5 className='ms-4 d-inline border'>{data.modelo}</h5>
-                  <p className='h6'>{data.descripcion}</p>
-                  <span className='h5'>${data.price}</span>
+                <div className="container col-11 mb-4">
+                  <h3 className=''>{data.marca}</h3>
+                  <h5 className='d-inline border'>{data.modelo}</h5>
+                  <p className=''>{data.descripcion}</p>
+                  <span className='fs-3'>${data.price}</span>
                 </div>
                 <div className='d-flex justify-content-center'>
                   <div className='container d-flex justify-content-center align-items-end'>

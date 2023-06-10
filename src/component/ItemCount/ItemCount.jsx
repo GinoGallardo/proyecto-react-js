@@ -16,11 +16,11 @@ const ItemCount = ({ initial, stock, onAdd }) => {
 
   return (
     <div className="container-fluid">
-      <div className="row p-0 d-flex justify-content-center">
-        <div className='mb-0 ms-4 justify-content-center'>
-          <button className='btn btn-dark' disabled={count <= 0} onClick={disminuye}>-</button>
-          <span className='fs-5 ms-3 me-3'>{count}</span>
-          <button className='btn btn-dark' disabled={count >= stock} onClick={incrementa}>+</button>
+      <div className="row d-flex justify-content-center">
+        <div className='mb-0 ms-4 d-flex'>
+          <button className='fs-6 btn btn-dark' disabled={count <= 0} onClick={disminuye}>-</button>
+          <span className='fs-5 ms-1 me-1'>{count}</span>
+          <button className='btn btn-dark fs-6' disabled={count >= stock} onClick={incrementa}>+</button>
         </div>
         <div className='container-fluid'>
         <button className="btn btn-outline-success mt-2 mb-2" disabled={count <= 0} onClick={() => onAdd(count)}>Agregar al Carrito</button>

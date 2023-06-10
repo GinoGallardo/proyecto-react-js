@@ -9,6 +9,7 @@ import MainLayout from '../Layout/MainLayout'
 import ItemDetailContainer from '../component/ItemDetailContainer/ItemDetailContainer'
 import CartProvider from '../Context/CartContext'
 import Cart from '../component/cart/Cart'
+import ItemListContainer from '../component/ItemListContainer/ItemListContainer'
 
 const Ruta = () => {
 
@@ -21,6 +22,7 @@ const Ruta = () => {
             <Route path='Product' element={<Product />} />
             <Route path='Contacto' element={<Contacto />} />
             <Route path='/pages/ItemDetail/:id' element={<ItemDetail />} />
+            <Route path="/categoria/:categoriaId" element={<ItemListContainer />}/>
             <Route path='/detalle/:detalleId' element={<ItemDetailContainer/>} />
             <Route path='Cart' element={<Cart/>} />
           </Route>
