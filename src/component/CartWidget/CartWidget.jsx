@@ -7,7 +7,7 @@ const CartWidget = () => {
 
 	return (
 		<>
-			<Link className="container d-flex text-light text-decoration-none border"
+			<Link className="container d-flex text-light text-decoration-none border rounded"
 						to='/Cart'>
 				<i className="bi bi-cart3"></i>
 				<span className="ms-2">{totalProducts() || ""}</span>

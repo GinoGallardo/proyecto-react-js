@@ -11,3 +11,25 @@
   margin: 0;
   padding: 0;
 }
+
+.color_button{
+  color: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.color_hambueguesa{
+  background-color: #f7f5f5;
+  border-radius: .2em;
+}
+
+.nav_hover{
+  color: #bdb3b3 !important;
+  padding: 1em !important;
+}
+
+.nav_hover:hover{
+  color: #faf9f9 !important;
+  text-decoration: underline;
+  scale: 1;
+}

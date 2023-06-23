@@ -9,9 +9,9 @@ export const Footer = () => {
       <div className="container-fluid text-light bg-dark text-center">
         <div className="row p-1 d-md-flex">
           <div className='col-md d-flex justify-content-center align-items-center'>
-            <NavLink to='/'><img className='navbarLogo w-50' src='https://firebasestorage.googleapis.com/v0/b/proyecto-react-js-d394a.appspot.com/o/image%2Fnavbarlogo.png?alt=media&token=85a7cb49-73c2-451c-b840-991e72dee3b3&_gl=1*nhk5sd*_ga*MzI1MDU5MTE2LjE2ODU0MDI2NTA.*_ga_CW55HF8NVT*MTY4NjI4MDMwMy43LjEuMTY4NjI4MjAyOS4wLjAuMA..' alt="" /></NavLink>
+            <NavLink to='/'><img className='navbarLogo' src='https://firebasestorage.googleapis.com/v0/b/proyecto-react-js-d394a.appspot.com/o/image%2Fnavbarlogo.png?alt=media&token=85a7cb49-73c2-451c-b840-991e72dee3b3&_gl=1*nhk5sd*_ga*MzI1MDU5MTE2LjE2ODU0MDI2NTA.*_ga_CW55HF8NVT*MTY4NjI4MDMwMy43LjEuMTY4NjI4MjAyOS4wLjAuMA..' alt="" /></NavLink>
           </div>
-          <div className='col-md align-items-center animate__rubberBand'>
+          <div className='d-none d-md-inline col-md align-items-center animate__rubberBand'>
             <h3>Nosotros</h3>
             <p>
               Vendedora lider  en <strong>Lencería</strong>, trabajamos con las mejores marcas del mercado y contamos con una gran variedad de modelos.

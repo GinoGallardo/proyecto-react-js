@@ -1,8 +1,8 @@
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 import React from "react";
-import { Link } from "react-router-dom";
 import ItemCart from "../ItemCart/ItemCart";
 import { useCartContext } from "../../Context/CartContext";
+import { Link } from "react-router-dom";
 
 const Cart = ({data}) => {
 	const { cart, totalPrice } = useCartContext();
@@ -48,7 +48,7 @@ const Cart = ({data}) => {
 			<hr className="me-2 ms-2 me-lg-5 ms-lg-5" />
 			<div className="container d-lg-flex justify-content-end align-items-center me-5 mb-5">
 			<p className="me-3 text-dark"><strong>Total:</strong> $ {totalPrice()}</p>
-			<button className="btn btn-outline-dark" onClick={handleClick}>Emitir compra</button>
+			<Link to='/Formulario' className="btn btn-outline-dark" onClick={handleClick}>Emitir compra</Link>
 			</div>
 		</>
 	);
