@@ -7,7 +7,7 @@ export const NavbarLi = (props) => {
   const navbar_items = [
     {
       path:"/",
-      name:"Home"
+      name:"Marcas"
     },
     {
       path:"/Product",
