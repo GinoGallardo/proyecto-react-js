@@ -11,6 +11,7 @@ import CartProvider from '../Context/CartContext'
 import Cart from '../component/cart/Cart'
 import Formulario from '../component/Form/Formulario'
 import ItemListContainer from '../component/ItemListContainer/ItemListContainer'
+import ItemMarcaContainer from '../component/ItemMarcaContainer/ItemMarcaContainer'
 
 const Ruta = () => {
 
@@ -24,6 +25,7 @@ const Ruta = () => {
             <Route path='Product' element={<Product />} />
             <Route path='Contacto' element={<Contacto />} />
             <Route path='/pages/ItemDetail/:id' element={<ItemDetail />} />
+            <Route path="/marca/:marcaId" element={<ItemMarcaContainer />}/>
             <Route path="/categoria/:categoriaId" element={<ItemListContainer />}/>
             <Route path='/detalle/:detalleId' element={<ItemDetailContainer/>} />
             <Route path='Cart' element={<Cart/>} />

@@ -1,0 +1,4 @@
+.hover:hover{
+  transform: scaleX(1em);
+  transition: all 1s;
+}

@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 import { getFirestore, collection, getDocs, query, where } from 'firebase/firestore'
-import ItemList from '../ItemList/ItemList';
-import Category from '../Category/Category';
 import { useParams } from 'react-router-dom';
 import Search from '../Search/Search';
-import { Orbit } from '@uiball/loaders'
+import Category from '../Category/Category';
+import { Orbit } from '@uiball/loaders';
+import ItemList from '../ItemList/ItemList';
 
-const ItemListContainer = () => {
+const ItemMarcaContainer = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true)
   const [filter, setFilter] = useState('');
-  const { categoriaId } = useParams();
+  const { marcaId } = useParams();
 
   useEffect(() => {
     setTimeout(() => {
       const querydb = getFirestore();
       const queryCollection = collection(querydb, "productos");
-      if (categoriaId) {
-        const queryFilter = query(queryCollection, where("categoria", "==", categoriaId))
+      if (marcaId) {
+        const queryFilter = query(queryCollection, where("marca", "==", marcaId))
         getDocs(queryFilter)
           .then(res => setData(res.docs.map(product => ({ id: product.id, ...product.data() }))))
       } else {
@@ -26,7 +26,7 @@ const ItemListContainer = () => {
       }
       setLoading(false);
     }, 2000);
-  }, [categoriaId])
+  }, [marcaId])
 
   const searchText = (event) => {
     setFilter(event.target.value);
@@ -62,10 +62,7 @@ const ItemListContainer = () => {
       </div>
       )}
     </>
-  );
-};
+  )
+}
 
-export default ItemListContainer;
-
-
-
+export default ItemMarcaContainer
